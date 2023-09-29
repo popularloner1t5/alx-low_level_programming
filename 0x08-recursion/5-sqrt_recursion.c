@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * sqrt_a - return the natural square root of 
+ * sqrt_a - return the natural square root of
  * a number
  * @a: input numbwer
  * @b: iterator
