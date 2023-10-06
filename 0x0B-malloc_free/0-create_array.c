@@ -10,21 +10,17 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	size_t i;
-	char *ptr;
+	char *str;
+	unsigned int i;
 
-	if (size == 0)
-	{
-		return (NULL);
-	}
-	ptr = malloc(sizeof(char) * size);
-	if (ptr == NULL)
+	str = malloc(sizeof(char) * size);
+	if (size == 0 || str == NULL)
 	{
 		return (NULL);
 	}
 	for (i = 0; i < size; i++)
 	{
-		ptr[1] = c;
+		str[1] = c;
 	}
-	return (ptr);
+	return (str);
 }
